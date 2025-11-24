@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | BELONG</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #eef6fb;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #ffffff;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #7bfece;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #f9f9f9;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #E8F5E9;
+            padding: 0 5px;
+            border-radius: 4px;
+        }
+
+        #language-switcher {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="privacy-policy-title">プライバシーポリシー</h1>
+        <p id="privacy-policy-subtitle">BELONG を安心してご利用いただくために</p>
+    </header>
+    <main>
+        <p id="privacy-policy-intro">
+            BELONG Team（以下，「当社」といいます。）は，アプリ「BELONG」（所有品を一元管理するためのモバイルアプリ。以下，「本サービス」といいます。）における個人情報およびユーザーデータの取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。
+        </p>
+
+        <h2 id="personal-info-title">第1条（取得するデータの種類）</h2>
+        <p id="personal-info-description">本サービスが取得する主なデータは以下のとおりです。</p>
+        <ul id="personal-info-list">
+            <li>アカウント情報：メールアドレス，OAuth プロバイダから受領する識別子や表示名等（Supabase が管理）</li>
+            <li>所有品データ：タイトル，カテゴリ，保管場所，数量，価格，メモ，ステータス（owned / wanted / other），タグなどユーザーが入力する情報</li>
+            <li>カテゴリ・場所情報：名称，アイコン，階層情報，カラー等（初期データまたはユーザー入力）</li>
+            <li>バックアップデータ：ユーザーがエクスポートする JSON 文字列（ユーザー自身で保存・管理）</li>
+            <li>広告・分析用データ：将来的に AdMob など外部 SDK が取得する識別子や操作ログ（機能が有効化された場合）</li>
+        </ul>
+        <p id="personal-info-note">現時点で，画像・正確な位置情報・連絡先などの機微データは取得していません。</p>
+
+        <h2 id="collection-method-title">第2条（取得方法と利用目的）</h2>
+        <p id="collection-method-description">当社は，ユーザーがアプリに入力・操作することでデータを取得します。取得したデータは次の目的で利用します。</p>
+        <ul id="usage-purpose-list">
+            <li>所有品の記録，検索，カテゴリ・場所管理，統計表示など本サービスの主要機能を提供するため</li>
+            <li>バックアップやデータ移行などユーザー主導のデータ管理機能を提供するため</li>
+            <li>認証・不正利用防止・問い合わせ対応など，安全で安定したサービス運営を行うため</li>
+            <li>将来提供予定のクラウド同期や広告機能において，ユーザーの同意に基づき最適化を行うため</li>
+        </ul>
+
+        <h2 id="storage-title">第3条（保存先と安全管理措置）</h2>
+        <p id="storage-description">
+            本サービスは，所有品データ・カテゴリ・場所情報を端末内の AsyncStorage に暗号化せず保存します。端末の紛失・盗難時に第三者へ閲覧される恐れがあるため，OS の画面ロックやデバイス暗号化の利用を推奨します。
+        </p>
+        <p id="storage-description2">アカウント情報は Supabase のクラウド環境で管理し，TLS により通信を暗号化します。アクセストークンやリフレッシュトークンは同じく AsyncStorage に保管されます。</p>
+
+        <h2 id="third-party-title">第4条（第三者提供）</h2>
+        <p id="third-party-description">
+            当社は，ユーザーの同意または法令に基づく場合を除き，個人情報を第三者に提供しません。なお，認証・広告など外部サービスを利用する機能においては，各サービスに必要な最小限の情報が送信されます。
+        </p>
+        <p id="third-party-description2">将来的にクラウド同期や広告 SDK を有効化する場合，取得・送信される情報の範囲と目的をアプリ内で明示し，必要に応じて同意管理を行います。</p>
+
+        <h2 id="user-rights-title">第5条（ユーザーの権利）</h2>
+        <p id="user-rights-description">ユーザーは，次の権利を有します。</p>
+        <ul id="user-rights-list">
+            <li>アプリ内で所有品データやカテゴリ情報を閲覧・編集・削除する権利</li>
+            <li>Supabase アカウントに紐づく個人情報の開示・訂正・利用停止・削除を当社へ請求する権利</li>
+            <li>バックアップ機能を用いたデータのエクスポート／インポートを行う権利</li>
+        </ul>
+        <p id="user-rights-process">お問い合わせを受領した場合，合理的範囲で速やかに対応します。ただし，法令上保存義務のある情報や技術的に削除が困難な情報については，対応を制限する場合があります。</p>
+
+        <h2 id="retention-title">第6条（データの保存期間と削除）</h2>
+        <p id="retention-description">端末内に保存されたデータは，ユーザーが削除操作を行うまで保持されます。アプリをアンインストールしてもデバイスのバックアップサービスによって復元される場合があります。</p>
+        <p id="retention-description2">Supabase が保持するアカウント情報は，ユーザーが退会または削除申請を行った際に順次削除します。バックアップファイルはユーザー自身の責任で管理してください。</p>
+
+        <h2 id="ads-title">第7条（広告・解析ツールの利用）</h2>
+        <p id="ads-description">本サービスは AdMob を将来的に導入する設計ですが，現時点では SDK を有効化していません。広告を配信する際は，Google モバイル広告ポリシーや各国の法令に基づきコンセント取得・年齢層設定等を行います。</p>
+
+        <h2 id="policy-change-title">第8条（ポリシーの改定）</h2>
+        <p id="policy-change-description">当社は，法令の改正や機能追加などに応じて本ポリシーを改定することがあります。重要な変更がある場合は，アプリ内通知または Web サイト等で周知し，必要に応じて再同意を取得します。</p>
+
+        <h2 id="contact-title">第9条（お問い合わせ）</h2>
+        <p id="contact-description">本ポリシーに関するお問い合わせ，または個人情報保護に関する各種請求は，下記窓口までご連絡ください。</p>
+        <p id="contact-info">Eメール：<a href="mailto:support@belong-app.com">support@belong-app.com</a></p>
+    </main>
+    <footer>
+        &copy; 2025 BELONG Team | All Rights Reserved.
+    </footer>
